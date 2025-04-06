@@ -15,30 +15,29 @@
             color: #333;
         }
         header {
-    display: flex;
-    align-items: center; /* Vertically align items */
-    justify-content: center; /* Center content horizontally */
-    position: relative;
-    background-color: #071473;
-    color: white;
-    padding: 1.5em 0;
-}
+            display: flex;
+            align-items: center; /* Vertically align items */
+            justify-content: center; /* Center content horizontally */
+            position: relative;
+            background-color: #071473;
+            color: white;
+            padding: 1.5em 0;
+        }
 
-.logo {
-    position: absolute;
-    left: 2em; /* Adjust the distance from the left edge (increase this value for more space) */
-    height: auto; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
-}
+        .logo {
+            position: absolute;
+            left: 2em; /* Adjust the distance from the left edge (increase this value for more space) */
+            height: auto; /* Adjust height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-    text-align: center;
-    z-index: 1; 
-    padding-left: 50px; 
-}
-
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-align: center;
+            z-index: 1; 
+            padding-left: 50px; 
+        }
 
         nav {
             display: flex;
@@ -190,104 +189,44 @@ h1 {
             z-index: -1;
         }
         .music-gallery {
-    text-align: center;
-    padding: 20px;
-    background-color: #f2f4f7;
-}
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f4f7;
+        }
 
-.music-gallery h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #031d42;
-}
+        .music-gallery h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #031d42;
+        }
 
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;  /* Allow wrapping of items */
+            margin: 0 auto;  /* Ensure proper centering of the gallery */
+        }
 
-.gallery-item {
-    max-width: 300px;
-    text-align: center;
-}
+        .gallery-item {
+            max-width: 300px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
         .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-        .gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+            width: 100%;
+            max-height: 200px;  /* Limit the image height to keep it consistent */
+            object-fit: cover;  /* Ensure the image fills the space without distorting */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-.gallery-item p {
-    margin-top: 5px;
-    font-size: 16px;
-    color: #555;
-}
+        .gallery-item p {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #555;
+        }
 
         .form-container {
             display: flex;
@@ -325,7 +264,7 @@ h1 {
 <body>
     <header>
         <img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/logo.jpeg.jpeg" alt="new logo" width="150" height="90">
-<h1>The Art & Music School</h1>
+        <h1>The Art & Music School</h1>
         <div class="animated-bg"></div>
     </header>
     <nav>
@@ -334,15 +273,13 @@ h1 {
         <a href="#register">Register</a>
         <a href="#contact">Contact Us</a>
         <a href="#map">Map</a>
-        
     </nav>
     <section id="about">
         <h2>About Us</h2>
         <p> Exam Centre for London College of Music (LCME), Rock School London(RSL), Trinity College London. Specialised in Classical Guitar Education, Keyboard, Piano & Violin.</p>
-            <center>
-                <img src="https://raw.githubusercontent.com/rachelllxo/segovia-school-of-music/refs/heads/main/viscard.jpeg" alt="visiting card" width="100%" height="250">
-            </center>
-    
+        <center>
+            <img src="https://raw.githubusercontent.com/rachelllxo/segovia-school-of-music/refs/heads/main/viscard.jpeg" alt="visiting card" width="100%" height="250">
+        </center>
     </section>
 
     <section id="courses" class="courses">
@@ -354,144 +291,75 @@ h1 {
             </div>
             <li onclick="toggleDescription('keyboard-description')">Keyboard</li>
             <div id="keyboard-description" class="course-description">
-                <p>Our keyboard course is designed to teach you everything from reading music to playing complex pieces, suitable for all skill levels. You will develop strong foundational skills while enjoying creative expression through music.</p>
+                <p>Our keyboard course is designed to teach you everything from reading music to playing complex pieces, suitable for all levels. Join us for fun and engaging lessons!</p>
             </div>
             <li onclick="toggleDescription('violin-description')">Violin</li>
             <div id="violin-description" class="course-description">
-                <p>Discover the joy of playing the violin with our comprehensive course, which includes both classical and contemporary styles. Whether you're a beginner or looking to refine your skills, our course adapts to your unique journey.</p>
+                <p>Explore the world of violin playing with professional instructors. From learning basic scales to mastering famous classical pieces, our violin course is the perfect choice for aspiring musicians.</p>
             </div>
-            <li onclick="toggleDescription('art-description')">Art</li>
-             <div id="art-description" class="art-description">
-            <p>Drawings and Paintings: Our classes range from beginners to Advance levels to enhance creativity. The Art and music school provide a specialized educational environment for everyone interested in pursuing art or developing their creative abilities.  </p>
-             </div>
         </ul>
     </section>
-    <section class="music-gallery">
-        <h2>Photos</h2>
+
+    <section id="register">
+        <h2>Register</h2>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="course">Choose Course:</label>
+                <select id="course" name="course">
+                    <option value="guitar">Guitar</option>
+                    <option value="keyboard">Keyboard</option>
+                    <option value="violin">Violin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <a href="#" class="button">Submit</a>
+        </div>
+    </section>
+
+    <section id="music-gallery" class="music-gallery">
+        <h2>Music Gallery</h2>
         <div class="gallery">
             <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/rachelllxo/segovia-school-of-music/refs/heads/main/pic.jpg" alt="Students playing guitar and keyboard" width="100" height="150">
-               
+                <img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/music1.jpg" alt="Image 1">
+                <p>Gallery Image 1</p>
             </div>
             <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/rachelllxo/segovia-school-of-music/refs/heads/main/pic1.jpg" alt="location"width="100" height="150">
+                <img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/music2.jpg" alt="Image 2">
+                <p>Gallery Image 2</p>
             </div>
-             </div>
             <div class="gallery-item">
-                <img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(1).jpeg" alt="location"width="100" height="150">
+                <img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/music3.jpg" alt="Image 3">
+                <p>Gallery Image 3</p>
             </div>
-           <div class="gallery-item"> 
-               <img src https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(10).jpeg" alt="location"width="100" height="150">
-            </div>
-        <div class="gallery-item">
-            <img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(11).jpeg"  alt="location"width="100" height="150">
-        </div>
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(12).jpeg" alt="location"width="100" height="150">
-            </div>
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(13).jpeg" alt="location"width="100" height="150">
-            </div>
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(2).jpeg" alt="location"width="100" height="150">
-            </div>
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(3).jpeg" alt="location"width="100" height="150">
-            </div>
-
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(4).jpeg" alt="location"width="100" height="150">
-            </div>
-
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(5).jpeg" alt="location"width="100" height="150">
-            </div>
-
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(6).jpeg" alt="location"width="100" height="150">
-            </div>
-
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(7).jpeg" alt="location"width="100" height="150">
-            </div>
-
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(8).jpeg" alt="location"width="100" height="150">
-            </div>
-
-
-<div class="gallery-item">
-
-<img src="https://raw.githubusercontent.com/rachelllxo/The-Art-and-Music-School/refs/heads/main/art%20(9).jpeg" alt="location"width="100" height="150">
-            </div>
-
-            
         </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Address: 1st Street, Jayalakshmi Nagar, Medical College Road, Thanjavur, Tamil Nadu - 613004</p>
-        <p>Email: <a href="mailto:segoviaschoolofmusic@gmail.com" class="button">segoviaschoolofmusic@gmail.com</a></p>
-        <p>Phone: +91 9962435677</p>
+
+    <section id="map">
+        <div class="map-container">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4824.102755971264!2d139.74781740722447!3d35.65493945648443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bcff8706ebf%3A0x467b149b897f08c8!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1643424648825!5m2!1sen!2sjp" style="border:0;"></iframe>
+        </div>
     </section>
-        <section id="register">
-        <h2>Register</h2>
-        <form action="submit_form.php" method="post" class="form-container">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Submit" class="button">
-            </div>
-        </form>
-    </section>
-    <section id="map" class="map-container">
-        <h2>Find Us</h2>
-       
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7098504099495!2d79.09126547377467!3d10.756830359557446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baabf0047c6dc1d%3A0x3bbc1a2606d5f50b!2sSegovia%20School%20of%20Music!5e0!3m2!1sen!2sin!4v1721551830075!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+
     <footer>
-        <p>&copy; 2024 Segovia School of Music. All rights reserved.</p>
+        <p>&copy; 2025 The Art & Music School. All Rights Reserved.</p>
     </footer>
+
     <script>
         function toggleDescription(id) {
-            const element = document.getElementById(id);
-            if (element.style.display === 'none' || element.style.display === '') {
-                element.style.display = 'block';
-            } else {
-                element.style.display = 'none';
-            }
+            var description = document.getElementById(id);
+            description.style.display = (description.style.display === "none" || description.style.display === "") ? "block" : "none";
         }
     </script>
 </body>
