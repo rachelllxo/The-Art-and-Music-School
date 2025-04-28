@@ -6,8 +6,224 @@
     <title>The Art & Music School</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* (your entire CSS remains same as you posted) */
-        /* I will not repeat it here to save space */
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Center content horizontally */
+    position: relative;
+    background-color: #071473;
+    color: white;
+    padding: 1.5em 0;
+}
+
+.logo {
+    position: absolute;
+    left: 2em; /* Adjust the distance from the left edge (increase this value for more space) */
+    height: auto; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+    z-index: 1; 
+    padding-left: 50px; 
+}
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+            flex: 1 1 auto;
+        }
+        nav a:hover {
+            background-color: #071473;
+            color: white;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        section h2 {
+            color: #071473;
+            animation: fadeInLeft 1s ease-out;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #071473;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #333;
+        }
+        .courses ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .courses li {
+            background-color: #071473;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: fadeInUp 1s ease-out;
+        }
+        .course-description {
+            display: none;
+            background-color: #e0e0e0;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+            .form-container {
+                width: 100%;
+            }
+            .form-group {
+                flex: 1 1 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            nav a {
+                padding: 8px;
+                font-size: 0.8em;
+            }
+            section {
+                margin: 5px;
+                padding: 10px;
+            }
+            .form-group {
+                flex: 1 1 100%;
+            }
+        }
+        .animated-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/music-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .form-group {
+            flex: 1 1 45%;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .map-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+    </style>
+
     </style>
 </head>
 <body>
